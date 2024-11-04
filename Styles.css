@@ -1,0 +1,912 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #f0a500;
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 1.5em;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Data3_converted (1).jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    color: #e0a82d;
+}
+
+.hero-content p {
+    font-size: 2em;
+    margin: 0.5em 0 1em;
+}
+
+.button {
+    padding: 0.7em 1.5em;
+    background: #f0a500;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d99000;
+}
+
+/* Section Styling */
+section {
+    padding: 4em 1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #f0a500;
+    margin-bottom: 1em;
+}
+
+.about, .projects, .portfolio, .contact {
+    background: #1e1e1e;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 2em auto;
+}
+
+/* Skills Section */
+/* Skills Section Styling */
+.Skills {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #1e1e1e; /* Adjust background color as needed */
+    color: #ffffff;
+}
+
+.Skills .sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #f0a500;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+.skill-item {
+    background-color: #333;
+    padding: 1em;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+}
+
+.skill-item h3 {
+    color: #f0a500;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Work-Experience Section */
+/* Work Experience Section Styling */
+.Experience {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 2em auto;
+}
+
+.Experience .sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #f0a500;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.experience-item {
+    background-color: #333;
+    padding: 1.5em;
+    border-radius: 8px;
+}
+
+.experience-item h3 {
+    color: #f0a500;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+.experience-item .company {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.experience-item .date {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 0.8em;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    margin-left: 1em;
+}
+
+.experience-item li {
+    margin: 0.5em 0;
+}
+
+/* Internship Section */
+.Internship {
+    width: 100%;
+    background: #1e1e1e; /* Dark background */
+    padding: 2em; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    color: #ffffff; /* White text for contrast */
+    margin: 2em auto; /* Center the container */
+}
+
+.sub-title{
+    color: #f0a500;
+    font-size: 2em;
+}
+.internship-details {
+    background-color: #333;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.internship-details {
+    margin-top: 1em; /* Space above internship details */
+}
+
+.internship-details h2 {
+    color: #f0a500; /* Title color for the internship */
+}
+
+.internship-details p {
+    margin: 0.5em 0; /* Space between paragraphs */
+}
+
+/* Projects */
+/* Projects Section Styling */
+.Projects {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.Projects .sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #f0a500;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.project-item {
+    background-color: #333;
+    padding: 1.5em;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    color: #f0a500;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-item p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-bottom: 1em;
+}
+
+.project-links {
+    display: flex;
+    gap: 1em;
+}
+
+.project-links .btn {
+    padding: 0.5em 1em;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.project-links .btn:hover {
+    background-color: #0056b3;
+}
+
+.project-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 1em; /* Space between buttons */
+}
+
+/* Portfolio Section */
+.portfolio {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 2em auto;
+}
+
+.portfolio .sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #f0a500;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.portfolio-item {
+    background-color: #333;
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item h3 {
+    color: #f0a500;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-bottom: 1em;
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.portfolio-links .pdf-thumbnail {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-links .pdf-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-links .btn {
+    padding: 0.5em 1em;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-links .btn:hover {
+    background-color: #0056b3;
+}
+
+.portfolio-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 1em; /* Space between buttons */
+}
+
+
+/* Certificat Section */
+
+/* Certification Section Styling */
+.Certifications {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #1e1e1e; /* Match background color */
+    color: #ffffff;
+    margin: 2em auto;
+}
+
+.Certifications .sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #f0a500; /* Highlight title color */
+}
+
+.certification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.certification-item {
+    background-color: #333;
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.certification-item h3 {
+    color: #f0a500;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.certification-item .issuer, .certification-item .date {
+    color: #aaa;
+    font-size: 1em;
+    margin: 0.3em 0;
+}
+
+.certification-item .btn {
+    padding: 0.5em 1em;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.certification-item .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* TCS Score Section Styling */
+.tcs-score {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #1e1e1e; /* Match the background color */
+    color: #ffffff;
+    margin: 2em auto;
+}
+
+.tcs-score .sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #f0a500; /* Highlight title color */
+}
+
+.score-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.score-item {
+    background-color: #333;
+    padding: 1.2em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.score-item h3 {
+    color: #f0a500;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+.score-item .score {
+    color: #aaa;
+    font-size: 1.2em;
+}
+
+
+/* Contact Section */
+.Contact {
+    width: 100%;
+    background: #1e1e1e; /* Dark background */
+    padding: 2em 0; /* Padding around the contact section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin: 2em auto; /* Center the container */
+    color: #ffffff; /* White text for contrast */
+}
+
+
+
+.row { 
+    background-color: #333;
+    padding: 0.5em 1em; /* Adjust top/bottom and left/right padding */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 1em auto; /* Center the container with vertical space */
+    width: calc(100% - 2em); /* Reduce width for corners */
+    max-width: 800px; /* Optional: set a max-width */
+}
+
+
+
+/* Flexbox for Row Layout */
+.row {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Left Contact Information */
+.contact-left {
+    flex: 1; /* Take equal space */
+    padding: 2em; /* Padding inside left section */
+    text-align: center; /* Center align text within the section */
+}
+
+
+
+
+/* Center title and paragraphs */
+.contact-title {
+    color: #f0a500; /* Gold color for the title */
+    margin-bottom: 1em; /* Space below the title */
+}
+
+.contact-info {
+    color: #ffffff; /* White color for the contact information */
+    margin: 1em 0; /* Space above and below paragraphs */
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 1em 0; /* Space around social icons */
+}
+
+.social-icons a {
+    text-decoration: none; /* No underline */
+    font-size: 30px; /* Icon size */
+    margin-right: 15px; /* Space between icons */
+    color: #f3efef; /* Icon color */
+    display: inline-block; /* Inline-block for better alignment */
+    transition: transform 0.5s; /* Transition effect for icons */
+}
+
+.social-icons a:hover {
+    color: #1a73e8; /* Change icon color on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+
+
+
+
+/* Right Contact Form */
+.contact-right {
+    flex: 1; /* Take equal space */
+    padding: 2em; /* Padding inside right section */
+    text-align: center; /* Align text to the center */
+    margin: 2em auto; /* Center the container with vertical space */
+    background-color: #1e1e1e; /* Set background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow */
+    max-width: 800px; /* Optional: set a max-width */
+}
+
+/* Form inside contact-right */
+.contact-right form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items in the form */
+    width: 100%; /* Full width for the form */
+}
+
+/* Input Fields and Textarea */
+/* Input Fields and Textarea */
+form input,
+form textarea {
+    padding: 1em; /* Padding inside inputs */
+    background: #333; /* Light background for inputs */
+    border: 1px solid #444; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    font-size: 1em; /* Font size for inputs */
+    transition: border-color 0.3s; /* Transition effect for border */
+    width: 100%; /* Full width for inputs */
+    max-width: 400px; /* Set a max-width for better layout control */
+    margin: 0.5em 0; /* Add some spacing between fields */
+    text-align: center; /* Center text in inputs */
+}
+
+
+/* Button Styles */
+.btn {
+    padding: 0.8em;
+    background: #1a73e8; /* Button background color */
+    border: none; /* No border */
+    color: #ffffff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+    font-size: 1em; /* Font size */
+    width: 100px; /* Set width to control button size */
+}
+
+button:hover,
+.btn:hover {
+    background-color: #0056b3; /* Change background on hover */
+}
+
+/* Success/Error Message */
+#msg {
+    margin-top: 1em; /* Space above the message display */
+    font-size: 1em; /* Font size for messages */
+    text-align: center; /* Center the message */
+}
+
+
+
+
+/* Footer Styling */
+.footer {
+    width: 100%; /* Full width for footer */
+    background-color: #1e1e1e; /* Match footer with contact section */
+    color: #ffffff; /* Text color for footer */
+    text-align: center; /* Center text within the footer */
+    padding: 1.5em 0; /* Add padding for spacing */
+    margin-top: 2em; /* Space above footer */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Optional: Footer link styling */
+.footer a {
+    color: #f0a500; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.footer a:hover {
+    color: #d99000; /* Change color on hover */
+}
+
+/*---------------css for small screens---------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0; /* Remove gap between items */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+/* Menu and Close Icons */
+#menu-icon, #close-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    /* Hide the default menu */
+
+    img {
+        width: 100%; /* Make image take full width of its container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 300px; /* Optional: set a max width to prevent excessive scaling */
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #333;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+        transition: right 0.3s ease;
+    }
+
+    /* Control spacing between items */
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Reduced spacing for a more compact look */
+    }
+
+    /* Show menu when sidemenu is active */
+    nav ul.active {
+        right: 0;
+    }
+
+    /* Show the menu and close icons */
+    #menu-icon {
+        display: block;
+    }
+
+    #close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+    }
+
+    .hero {
+        height: 60vh;
+        padding: 1em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 0.5em 1.2em;
+        font-size: 0.9em;
+    }
+
+    /* Section Padding */
+    section {
+        padding: 2em 0.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* About, Projects, Portfolio, Contact sections */
+    .about, .projects, .portfolio, .contact, .Skills, .Experience, .Internship, .Certifications, .tcs-score {
+        padding: 1em;
+        font-size: 0.9em;
+    }
+
+    /* Skills Section */
+    .skills-list {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .skill-item {
+        width: 100%;
+    }
+
+    /* Experience Section */
+    .experience-list {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+
+    /* Projects Section */
+    .projects-list {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+
+/* Certificate Section */
+.certification-list {
+    max-width: 100%; /* Allow full width */
+    padding: 0 1em; /* Add horizontal padding */
+}
+
+/* Individual Certification Item */
+.certification-item {
+    margin: 0.5em 0; /* Space between certification items */
+    background-color: #333; /* Light background for better visibility */
+   
+    border-radius: 5px; /* Rounded corners */
+    padding: 1em; /* Padding inside certification items */
+    text-align: center; /* Center text inside items */
+}
+
+/* TCS Score Section */
+.score-list {
+    max-width: 100%; /* Allow full width */
+    padding: 0 1em; /* Add horizontal padding */
+}
+
+/* Individual Score Item */
+.score-item {
+    margin: 0.5em 0; /* Space between score items */
+    background-color: #333; /* Light background for scores */
+    
+    border-radius: 5px; /* Rounded corners */
+    padding: 1em; /* Padding inside score items */
+    text-align: center; /* Center text inside items */
+}
+
+/* Title Styles for Certifications and Scores */
+.certification-item h3,
+.score-item h3 {
+    font-size: 1.4em; /* Adjust title size */
+    margin-bottom: 0.5em; /* Space below title */
+}
+
+/* Description Styles for Certifications and Scores */
+.certification-item p,
+.score-item p {
+    font-size: 1em; /* Adjust description size */
+    margin: 0; /* Remove margin */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Contact Section */
+    .Contact {
+        padding: 2em;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .contact-right form {
+        width: 100%;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.7em;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 0.8em;
+        padding: 1em;
+    }
+}
